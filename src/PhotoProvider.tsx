@@ -5,6 +5,7 @@ import { dataType, IPhotoProviderBase } from './types';
 
 export interface IPhotoProvider extends IPhotoProviderBase {
   children: React.ReactNode;
+  onIndexChange?: () => void;
 }
 
 type PhotoProviderState = {
