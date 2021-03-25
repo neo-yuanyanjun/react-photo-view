@@ -65,6 +65,9 @@ export default class PhotoProvider extends React.Component<IPhotoProvider, Photo
     this.setState({
       index,
     });
+    if (this.props.onIndexChange) {
+      this.props.onIndexChange(index)
+    }
   };
 
   render() {
